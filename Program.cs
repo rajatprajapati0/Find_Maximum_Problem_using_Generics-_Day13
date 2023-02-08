@@ -6,7 +6,12 @@ namespace Find_Maximum_By_Genric
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Console.WriteLine("Find Maximum Problem using Generics");
+
+            Test test= new Test();
+            test.testForMax();
+        
+        
         }
     }
 }
