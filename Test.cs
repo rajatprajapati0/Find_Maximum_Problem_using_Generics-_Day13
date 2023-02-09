@@ -7,15 +7,26 @@ namespace Find_Maximum_By_Genric
 {
    public class Test
    {
-        public void testForMax()
+        public void intTestForMax()
         {
-            Console.WriteLine("enter three no. to find maximum number TC1.1");
+            Console.WriteLine("enter three no. to find maximum number ");
             int a=int.Parse(Console.ReadLine());
             int b=int.Parse(Console.ReadLine());    
             int c=int.Parse(Console.ReadLine());
-            IntMaxValue obj=new IntMaxValue();
-            int max=obj.MaxValue(a,b,c);
+            MaxValue obj=new MaxValue();
+            int max=obj.IntMaxValue(a,b,c);
             Console.WriteLine(max);
         }
-   }
+
+        public void floatTestForMax()
+        {
+            Console.WriteLine("enter three no. to find maximum number ");
+            float a = float.Parse(Console.ReadLine());
+            float b = float.Parse(Console.ReadLine());
+            float c = float.Parse(Console.ReadLine());
+            MaxValue obj = new MaxValue();
+            float max = obj.FloatMaxValue(a,b,c);
+            Console.WriteLine(max);
+        }
+    }
 }
